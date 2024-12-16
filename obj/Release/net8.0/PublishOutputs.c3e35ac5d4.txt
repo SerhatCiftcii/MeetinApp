@@ -1,0 +1,8 @@
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\MeetingApp.exe
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\appsettings.json
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\libman.json
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\MeetingApp.dll
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\MeetingApp.deps.json
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\MeetingApp.runtimeconfig.json
+C:\Users\Serhatt\Desktop\MeetingApp\bin\Release\net8.0\publish\MeetingApp.pdb

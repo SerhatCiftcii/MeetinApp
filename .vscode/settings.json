@@ -1,0 +1,13 @@
+{
+
+   
+    "notebook.consolidatedRunButton": true,
+    "workbench.editor.defaultBinaryEditor": "default",
+    "workbench.editor.splitInGroupLayout": "horizontal",
+    "workbench.settings.useSplitJSON": true,
+    "workbench.editor.splitOnDragAndDrop": true,
+    "code-runner.clearPreviousOutput": true,
+    "razor.languageServer.forceRuntimeCodeGeneration": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.showRunIconInEditorTitleMenu": true
+}

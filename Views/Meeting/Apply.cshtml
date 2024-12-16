@@ -1,0 +1,50 @@
+@model UserInfo
+@{
+    ViewBag.Title=" Başvuru Formu";
+    
+}
+<h1  class="h4 text-center">Toplantı Katılım Formuuu</h1>
+
+<form method="post" action="/Meeting/Apply" enctype="multipart/form-data">
+<div asp-validation-summary="All"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label" >Ad soyad</label>
+      <input asp-for="Name" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Phone" class="form-label">Telefon</label>
+        <input asp-for="Phone" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label" >Email</label>
+        <input asp-for="Email"class="form-control">
+    </div>
+
+   <div class="mb-3">
+    <label for="Image">Profil Resmi:</label>
+    <input type="file" name="Image" accept="image/*" class="form-control" required>
+</div>
+
+    <div class="mb-3">
+        <label asp-for="WillAttend" class="form-label" >Katılım durumu</label>
+      <select  asp-for="WillAttend" class="form-select">
+         <option value="">Seçiniz</option>
+        <option value="true">Evet, Geliyorum</option>
+        <option value="false">Hayır, Gelmiyorum</option>
+      </select>
+    </div>
+
+   <div class="form-group">
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.Error
+        </div>
+    }
+</div>
+
+    <button class="btn btn-success btn-md" type="submit">Kaydet</button>
+</form>

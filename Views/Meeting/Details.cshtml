@@ -1,0 +1,31 @@
+@model UserInfo
+@{
+    ViewBag.Title="Başvuru Detayı";
+}
+@{
+    var className=@Model.WillAttend== true ?"success":"danger";
+}
+<h1 class="text-center">Başvuru Detayı</h1>
+<div class="card text-center" style="width: 38rem;">
+    <div class="d-flex justify-content-center">
+  <img src="~/img/@Model.Image"  class="card-img-top" alt="..." style="max-width: 250px;">
+  </div>
+     <li class="badge text-bg-@className">
+        @if(Model.WillAttend==true){
+              <text>Katılıyor</text>
+        }else{
+             <text>Katılmıyor</text>
+        }
+     </li>
+  <div class="card-body">
+  
+    <h5 class="card-title fw-bold">AdSoyad: @Model.Name</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item  fw-bold">Email: @Model.Email</li>
+    <li class="list-group fw-bold">Telefon: @Model.Phone</li>
+    <a asp-controller="Meeting" asp-action="List" class="btn btn-outline-@className">Toplam Katılımcı Listesi</a>
+     
+
+  </ul>
+ </div>
